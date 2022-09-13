@@ -48,6 +48,18 @@ const data = {
       numReviews: 20,
       description: 'high quality pant',
     },
+    {
+      name: 'Nike Fit Pant',
+      slug: 'adidasfitpants',
+      category: 'PANTS',
+      image: '/images/p3.jpg',
+      price: 148,
+      countInStock: 8,
+      brand: 'NIKE',
+      rating: 8.5,
+      numReviews: 20,
+      description: 'high quality pant',
+    },
   ],
 };
 export default data;
