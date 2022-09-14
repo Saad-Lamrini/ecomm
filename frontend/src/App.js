@@ -15,7 +15,9 @@ function App() {
           <Navbar bg="primary" variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Boutique lamrini</Navbar.Brand>
+                <Navbar.Brand>
+                  <h3>BOUTIQUE LAMRINI</h3>
+                </Navbar.Brand>
               </LinkContainer>
             </Container>
           </Navbar>
