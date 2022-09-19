@@ -11,6 +11,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useContext } from 'react';
 import Store from './Store';
 import CartScreen from './Screens/CartScreen';
+import SigninScreen from './Screens/SigninScreen';
+
 //import Badge from 'react-bootstrap/esm/Badge';
 
 function App() {
@@ -47,6 +49,7 @@ function App() {
               <Route path="/product/:slug" element={<Productscreen />} />
               <Route path="/" element={<Homescreen />} />
               <Route path="/cart" element={<CartScreen />} />
+              <Route path="/signin" element={<SigninScreen />} />
             </Routes>
           </Container>
         </main>
