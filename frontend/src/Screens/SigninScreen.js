@@ -42,9 +42,15 @@ export default function SigninScreen() {
     }
   }, [navigate, redirect, userInfo]);
   return (
-    <Container className="small-container">
+    <Container className="small-container1">
       <Row>
-        <Col></Col>
+        <Col>
+          <img
+            className="img-large1"
+            src="/images/7anout.jpg"
+            alt="boutique lamrini"
+          ></img>
+        </Col>
         <Col>
           <div className="formulaire">
             <Helmet>

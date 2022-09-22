@@ -15,6 +15,7 @@ import { useContext } from 'react';
 import Store from './Store';
 import CartScreen from './Screens/CartScreen';
 import SigninScreen from './Screens/SigninScreen';
+import ShippingAddressScreen from './Screens/ShippingAddressScreen';
 
 //import Badge from 'react-bootstrap/esm/Badge';
 
@@ -24,6 +25,7 @@ function App() {
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
   };
   return (
     <BrowserRouter>
@@ -79,6 +81,10 @@ function App() {
               <Route path="/" element={<Homescreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
+              <Route
+                path="/shipping"
+                element={<ShippingAddressScreen />}
+              ></Route>
             </Routes>
           </Container>
         </main>
