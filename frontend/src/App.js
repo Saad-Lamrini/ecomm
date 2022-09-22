@@ -18,6 +18,7 @@ import SigninScreen from './Screens/SigninScreen';
 import ShippingAddressScreen from './Screens/ShippingAddressScreen';
 import SignupScreen from './Screens/SignupScreen';
 import PaymentMethodScreen from './Screens/PaymentMethodScreen';
+import PlaceOrderScreen from './Screens/PlaceOrderScreen';
 
 //import Badge from 'react-bootstrap/esm/Badge';
 
@@ -86,6 +87,8 @@ function App() {
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SignupScreen />} />
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
+              <Route path="/placeorder" element={<PlaceOrderScreen />} />
+
               <Route
                 path="/shipping"
                 element={<ShippingAddressScreen />}
