@@ -12,6 +12,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useContext } from 'react';
+
 import Store from './Store';
 import CartScreen from './Screens/CartScreen';
 import SigninScreen from './Screens/SigninScreen';
@@ -19,6 +20,7 @@ import ShippingAddressScreen from './Screens/ShippingAddressScreen';
 import SignupScreen from './Screens/SignupScreen';
 import PaymentMethodScreen from './Screens/PaymentMethodScreen';
 import PlaceOrderScreen from './Screens/PlaceOrderScreen';
+import OrderScreen from './Screens/OrderScreen';
 
 //import Badge from 'react-bootstrap/esm/Badge';
 
@@ -88,7 +90,7 @@ function App() {
               <Route path="/signup" element={<SignupScreen />} />
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               <Route path="/placeorder" element={<PlaceOrderScreen />} />
-
+              <Route path="/order/:id" element={<OrderScreen />}></Route>
               <Route
                 path="/shipping"
                 element={<ShippingAddressScreen />}
